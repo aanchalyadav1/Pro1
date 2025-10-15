@@ -1,0 +1,6 @@
+streamlit
+deepface
+spotipy
+python-dotenv
+opencv-python-headless
+bcrypt
