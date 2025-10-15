@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: music-recommender
+    env: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: fb79f67e486247c4b8a0308d1c482646
+        sync: false
+      - key: cce4a58dcb5e43b392861a8d20b89a1d
+        sync: false
+      - key: SPOTIPY_REDIRECT_URI
+        value: https://your-app-name.onrender.com/callback
+      - key: EMAIL_ADDRESS
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
