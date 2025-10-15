@@ -1,6 +1,6 @@
+opencv-python-headless==4.7.0.72
+deepface==1.1.6
 streamlit
-deepface
 spotipy
 python-dotenv
-opencv-python-headless
 bcrypt
